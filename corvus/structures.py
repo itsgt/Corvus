@@ -264,6 +264,7 @@ class Handler(metaclass=ABCMeta):
         self.prep(config)
         print("####POTENTIALLY UPDATED CONFIG#####")
         print(config)
+        print("###################################")
 # NOTE FDV:
 # These changes are to make structure.py compatible with JJK's changes in the
 # feff.py handler. He implemented inserting the generateInput andi
