@@ -255,9 +255,15 @@ class Handler(metaclass=ABCMeta):
     
     @classmethod
     def exchange(self, config, input, output):
-        print((config, input, output))
+        print("#############CONFIG################")
+        print(config)
+        print("#############INPUT#################")
+        print(input)
+        print("#############OUTPUT################")
+        print(output)
         self.prep(config)
-        print((config, input, output))
+        print("####POTENTIALLY UPDATED CONFIG#####")
+        print(config)
 # NOTE FDV:
 # These changes are to make structure.py compatible with JJK's changes in the
 # feff.py handler. He implemented inserting the generateInput andi
