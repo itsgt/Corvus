@@ -269,6 +269,8 @@ def baseInput(input):
 
     Inp_dict = {}
 
+    print(input['cell_scaling_abc'])
+    print(type(input['cell_scaling_abc']))
     Inp_dict['acell'] = f"{input['cell_scaling_abc'][0]} {input['cell_scaling_abc'][1]} {input['cell_scaling_abc'][2]}"
     if input['cell_vectors'] is not None:
         Inp_dict['rprim'] = input['cell_vectors']
