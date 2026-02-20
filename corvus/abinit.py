@@ -144,8 +144,8 @@ class Abinit(Handler):
                 prefix = ''
             executable = (prefix + ' ' + config[tool]).split()
                 
-            inp = open(os.path.join(dir, f), 'r')
-            log = open(os.path.join(dir, '.'.join(['log', num, desc, tool])), 'w')
+            inp = open(os.path.join(dir, f), 'r').read()
+            log = open(os.path.join(dir, '.'.join(['log', num, desc, tool])), 'w').read()
 
             print("######EXECUTABLE#######")
             print(executable)
