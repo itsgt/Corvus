@@ -156,7 +156,7 @@ class Abinit(Handler):
             print("#######################")
             p = subprocess.run(executable, cwd=dir, input=inp, stdout=log, stderr=log,text=True)
 
-            inp.close()
+            #inp.close()
             log.close()
 
 # Modified by FDV:
