@@ -146,6 +146,14 @@ class Abinit(Handler):
                 
             inp = open(os.path.join(dir, f), 'r')
             log = open(os.path.join(dir, '.'.join(['log', num, desc, tool])), 'w')
+
+            print("######EXECUTABLE#######")
+            print(executable)
+            print("#########INP###########")
+            print(inp)
+            print("#########LOG###########")
+            print(log)
+            print("#######################")
             p = subprocess.run(executable, cwd=dir, input=inp, stdout=log, stderr=log,text=True)
 
             inp.close()
