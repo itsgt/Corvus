@@ -849,6 +849,6 @@ def translateOutput(config, input, output):
           file = os.path.join(dir, '4.anaddb.ifc.out_ep_')
           output[target] = eli2couplings(file) 
       elif target == 'dynmat':
-          file = os.path.join(dir, 'ifcinfo.out')
+          file = os.path.join(dir, '4.anaddb.ifc_ifcinfo.dat')
           output[target] = ifc2dym(file, input)
    
