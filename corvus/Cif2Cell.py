@@ -168,8 +168,8 @@ class Cif2Cell(Handler):
                 
                 # The cell_data structure now has all cell data that we need 
                 # in it, or a method to get that data. 
-                if 'cell_vectors' in output:
-                    output['cell_vectors'] = cell_data.latticevectors
+                #if 'cell_vectors' in output:
+                output['cell_vectors'] = cell_data.latticevectors
 
                 if 'cell_struct_xyz_red' in output:
                     xred = []
