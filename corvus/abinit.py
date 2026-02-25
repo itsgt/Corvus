@@ -272,8 +272,8 @@ def baseInput(input):
     print(input['cell_scaling_abc'])
     print(type(input['cell_scaling_abc']))
     Inp_dict['acell'] = f"{input['cell_scaling_abc'][0][0]} {input['cell_scaling_abc'][0][1]} {input['cell_scaling_abc'][0][2]}"
-    if input['cell_vectors'] is not None:
-        Inp_dict['rprim'] = input['cell_vectors']
+    assert input['cell_vectors'] is not None, "Cell vectors are required"
+    Inp_dict['rprim'] = input['cell_vectors']
     Inp_dict['natom'] = len(input['cell_struc_xyz_red'])
 
 # Create a list of unique atom type labels
