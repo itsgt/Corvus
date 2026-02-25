@@ -162,9 +162,13 @@ class Cif2Cell(Handler):
                 # Fill the cell data object from the cif file.
                 cell_data.getFromCIF(cif_dict)
 
+                print(cell.latticevectors)
+
                 # Calculate cell structure for the primitive cell for now. Supercells are
                 # represented as P1, so this will not harm that.
                 cell_data.primitive()
+
+                print(cell.latticevectors)
                 
                 # The cell_data structure now has all cell data that we need 
                 # in it, or a method to get that data. 
